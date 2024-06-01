@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MentaLink Project</title>
 <style>
+    /* Style for the body with background image */
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('background.jpg'); /* URL to your background image */
+        background-size: cover; /* Cover the entire viewport */
+        background-position: center; /* Center the background image */
+        font-family: Arial, sans-serif; /* Optional: Specify font family */
+    }
+
+    /* Style for the container using CSS Grid */
+    .iframe-container {
+        display: grid;
+        place-items: center;
+        height: 100vh; /* Full height of the viewport */
+    }
+
+    /* Style for the iframe */
+    .iframe-container iframe {
+        width: 80%; /* Set iframe width */
+        height: 80%; /* Set iframe height */
+        max-width: 600px; /* Maximum width for the iframe */
+        max-height: 600px; /* Maximum height for the iframe */
+        border: none; /* Remove iframe border */
+    }
     /* Style for the container to position and size iframes */
     .iframe-container {
         position: relative;
@@ -112,6 +136,11 @@
     <header>
         <h1>MentaLink</h1>
     </header>
+    <body>
+    <div class="iframe-container">
+        <!-- Iframe positioned in the middle of the page using CSS Grid -->
+        <iframe src="https://www.chatpdf.com/share/xf9pcq3AR4OR0bSmWRHAV"></iframe>
+    </div>
     <div class="iframe-container">
         <!-- First iframe -->
         <iframe src="https://www.chatpdf.com/share/tW2duISpoBamqSddd72eS"></iframe>
