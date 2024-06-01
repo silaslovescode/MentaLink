@@ -4,57 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MentaLink Project</title>
-<style>
-    /* Style for the body with background image */
-   
-
-    /* Style for the body with background image */
-    body {
-        margin: 0;
-        padding: 0;
-        background-image: url('background.jpg'); /* URL to your background image */
-        background-size: cover; /* Cover the entire viewport */
-        background-position: center; /* Center the background image */
-        font-family: Arial, sans-serif; /* Optional: Specify font family */
-    }
-
-    /* Style for the container using CSS Grid */
-    .iframe-container {
-        display: grid;
-        place-items: center;
-        height: 100vh; /* Full height of the viewport */
-    }
-
-    /* Style for the iframe */
-    .iframe-container iframe {
-        width: 80%; /* Set iframe width */
-        height: 80%; /* Set iframe height */
-        max-width: 600px; /* Maximum width for the iframe */
-        max-height: 600px; /* Maximum height for the iframe */
-        border: none; /* Remove iframe border */
-    }
-    /* Style for the container to position and size iframes */
-    .iframe-container {
-        position: relative;
-        width: 100%;
-        height: 400px; /* Adjust height as needed */
-    }
-
-    /* Style for each iframe */
-    .iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none; /* Remove iframe border */
-    }
-
-    /* Additional styling for overlaying iframes */
-    .overlay-iframe {
-        pointer-events: none; /* Allows clicks to pass through the overlay iframe */
-        opacity: 0.0; /* Adjust opacity for overlay effect */
-    }
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -135,19 +85,12 @@
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <!-- Iframe positioned in the middle of the page using Flexbox -->
-        <iframe src="https://www.chatpdf.com/share/xf9pcq3AR4OR0bSmWRHAV"></iframe>
-    </div>
     <header>
         <h1>MentaLink</h1>
     </header>
-    <div class="iframe-container">
-        <!-- First iframe -->
-        <iframe src="https://www.chatpdf.com/share/tW2duISpoBamqSddd72eS"></iframe>
-        
-        <!-- Second iframe (overlay) -->
-        <iframe class="overlay-iframe" src="https://www.chatpdf.com/share/tW2duISpoBamqSddd72eS"></iframe>
+    <div class="container1">
+        <iframe src="https://www.chatpdf.com/share/tW2duISpoBamqSddd72eS"></iframe>	   
+        <div class="overlay"></div>
     </div>
 
     <!-- Client-side sections -->
@@ -161,6 +104,19 @@
             <li><a href="https://developers.africastalking.com/simulator">Mobile Data</a></li>
         </ul>
     </section>
+
+    <section class="client-section">
+        <h2>About Us</h2>
+        <!-- Add your About Us content here -->
+    </section>
+
+    <section class="client-section">
+        <h2>Developers</h2>
+        <!-- Add your Developers content here -->
+    </section>
+    
+    <!-- Your existing JavaScript or any additional client-side scripts -->
+
     <div class="container">
         <section class="bio">
             <h2>About Me</h2>
